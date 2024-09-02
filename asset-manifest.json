@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.87b88bf2.css",
-    "main.js": "/static/js/main.3dda17e1.js",
-    "static/css/6013.519facf9.chunk.css": "/static/css/6013.519facf9.chunk.css",
-    "static/js/6013.b74bd574.chunk.js": "/static/js/6013.b74bd574.chunk.js",
-    "static/css/9195.4104df2d.chunk.css": "/static/css/9195.4104df2d.chunk.css",
-    "static/js/9195.86faaebc.chunk.js": "/static/js/9195.86faaebc.chunk.js",
+    "main.css": "/static/css/main.414692de.css",
+    "main.js": "/static/js/main.a1f10da7.js",
+    "static/css/7248.519facf9.chunk.css": "/static/css/7248.519facf9.chunk.css",
+    "static/js/7248.0d31f50f.chunk.js": "/static/js/7248.0d31f50f.chunk.js",
+    "static/css/2582.4104df2d.chunk.css": "/static/css/2582.4104df2d.chunk.css",
+    "static/js/2582.4319e56b.chunk.js": "/static/js/2582.4319e56b.chunk.js",
     "static/js/704.2022fb38.chunk.js": "/static/js/704.2022fb38.chunk.js",
     "static/js/2377.32840048.chunk.js": "/static/js/2377.32840048.chunk.js",
     "static/js/5976.defb2b5d.chunk.js": "/static/js/5976.defb2b5d.chunk.js",
@@ -84,18 +84,18 @@
     "static/js/4380.1cec7dc8.chunk.js": "/static/js/4380.1cec7dc8.chunk.js",
     "static/js/9201.051ea325.chunk.js": "/static/js/9201.051ea325.chunk.js",
     "static/js/8724.296117ad.chunk.js": "/static/js/8724.296117ad.chunk.js",
-    "static/js/8901.f51cd7f5.chunk.js": "/static/js/8901.f51cd7f5.chunk.js",
+    "static/js/7687.1f9c4bea.chunk.js": "/static/js/7687.1f9c4bea.chunk.js",
     "static/js/1628.f9af2e8b.chunk.js": "/static/js/1628.f9af2e8b.chunk.js",
     "static/css/2818.289eaede.chunk.css": "/static/css/2818.289eaede.chunk.css",
     "static/js/2818.72852365.chunk.js": "/static/js/2818.72852365.chunk.js",
     "static/js/1879.f75f1c3a.chunk.js": "/static/js/1879.f75f1c3a.chunk.js",
-    "static/js/7870.e2144041.chunk.js": "/static/js/7870.e2144041.chunk.js",
+    "static/js/7870.b3fb6b71.chunk.js": "/static/js/7870.b3fb6b71.chunk.js",
     "static/media/flags@2x.png": "/static/media/flags@2x.140042eba8c90ae1cede.png",
     "static/media/flags.png": "/static/media/flags.ae53191452bb217f0fa6.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.87b88bf2.css",
-    "static/js/main.3dda17e1.js"
+    "static/css/main.414692de.css",
+    "static/js/main.a1f10da7.js"
   ]
 }
