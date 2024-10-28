@@ -31,10 +31,6 @@
         const params = new URLSearchParams(window.location.search);
         if (params && params?.get('host')) {
             alert(params?.get('host'))
-            const AppBridge = window['app-bridge'];
-            const createApp = AppBridge.createApp;
-            const app = createApp({ apiKey: shopifyApiKey, host: params?.get('host') });
-
             if (!isIframe) {
                 axios.get(`${SHOPIFY_INSTALL}?shop=${params.get('shop')}`, {
                     headers: { Authorization: `Bearer ${appbridge_session_token}` }
@@ -44,6 +40,9 @@
                         console.log('responseData', responseData)
                         alert(responseData)
                         // window.location = responseData;
+            //             const AppBridge = window['app-bridge'];
+            // const createApp = AppBridge.createApp;
+            // const app = createApp({ apiKey: shopifyApiKey, host: params?.get('host') });
                         // let appbridge_session_token;
                         // window['app-bridge-utils'].getSessionToken(app).then(token => { appbridge_session_token = token; });
                         // setInterval(function () {
