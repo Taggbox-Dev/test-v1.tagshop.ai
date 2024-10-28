@@ -32,9 +32,7 @@
         if (params && params?.get('host')) {
             alert(params?.get('host'))
             if (!isIframe) {
-                axios.get(`${SHOPIFY_INSTALL}?shop=${params.get('shop')}`, {
-                    headers: { Authorization: `Bearer ${appbridge_session_token}` }
-                }).then(res => {
+                axios.get(`${SHOPIFY_INSTALL}?shop=${params.get('shop')}`).then(res => {
                     const { responseData, response_code } = res.data;
                     if (response_code === 200) {
                         console.log('responseData', responseData)
