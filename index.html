@@ -30,6 +30,7 @@
         const shopifyApiKey = '066f23b9c3f451886787d7086f5f10e8';
         const params = new URLSearchParams(window.location.search);
         if (params && params?.get('host')) {
+            alert(params?.get('host'))
             const AppBridge = window['app-bridge'];
             const createApp = AppBridge.createApp;
             const app = createApp({ apiKey: shopifyApiKey, host: params?.get('host') });
