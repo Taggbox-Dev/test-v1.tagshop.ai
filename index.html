@@ -36,12 +36,13 @@
      <noscript>You need to enable JavaScript to run this app.</noscript>
      <div id="embedAppLoader" class="centerImg"> <img src="https://cloud.tagshop.ai/app/media/images/spinner.gif" alt="Tagshop Spinner"
         width="60px" height="70px" /> </div>
-    <div id="embedApp"></div>
+    <div id="rootDashoard" style="display: none;"></div>
 </body>
 <script> 
     function loadDashboardContent() {
-        $('#embedApp').html('<div id="rootDashoard"></div>');
+        // $('#embedApp').html('<div id="rootDashoard"></div>');
         $('#embedAppLoader').hide();
+        $('#rootDashoard').show();
         }
 
     document.addEventListener("DOMContentLoaded", function () {
