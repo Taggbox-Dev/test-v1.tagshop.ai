@@ -10,24 +10,6 @@
       rel="stylesheet"
       href="https://cloud.tagshop.ai/app/font-awesome/css/all.css"
     />
-    <script
-      class="delayed-script"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-    ></script>
-    <script
-      class="delayed-script"
-      type="text/javascript"
-      src="/assets/jquery.minicolors.js"
-    ></script>
-    <script
-      class="delayed-script"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0iH8uH6vpABk73L7sd8Kn-5B7q9SthTg&libraries=places"
-    ></script>
-    <script
-      class="delayed-script"
-      src="https://cdn.firstpromoter.com/fpr.js"
-      async
-    ></script>
     <script class="delayed-script">
       document.addEventListener("DOMContentLoaded", function () {
         if (window.self == window.top) {
@@ -35,6 +17,7 @@
           o &&
             o.length &&
             o.forEach((e) => {
+              o.disabled = !0;
               eval(o.textContent);
             });
           const e = document.getElementById("rootLoader"),
@@ -48,8 +31,7 @@
               o &&
                 o.length &&
                 o.forEach((e) => {
-                  //o.disabled = !1;
-                  //eval(o.textContent);
+                  o.disabled = !1;
                 }),
                 (e.style.display = "none"),
                 (t.style.display = "block");
@@ -185,26 +167,7 @@
         fpr("init", { cid: "44stn5sn" }),
         fpr("click");
     </script>
-    <script
-      class="delayed-script"
-      async
-      type="text/javascript"
-      src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
-    ></script>
-    <script
-      class="delayed-script"
-      src="https://accounts.google.com/gsi/client"
-      async
-      defer="defer"
-    ></script>
-    <script
-      class="delayed-script"
-      src="https://unpkg.com/@shopify/app-bridge@3"
-    ></script>
-    <script
-      class="delayed-script"
-      src="https://unpkg.com/@shopify/app-bridge-utils@3"
-    ></script>
+   
     <script class="delayed-script" defer="defer" src="/static/js/main.6d5de7d2.js"></script>
     <link href="/static/css/main.d5e19027.css" rel="stylesheet" />
   </head>
