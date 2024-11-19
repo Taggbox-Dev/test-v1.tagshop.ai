@@ -28,26 +28,26 @@
       document.addEventListener("DOMContentLoaded", function () {
         if (window.self == window.top) {
           const o = document.querySelectorAll(".delayed-script");
-          o &&
-            o.length &&
-            o.forEach((e) => {
-              o.disabled = !0;
-              eval(o.textContent);
-            });
+          // o &&
+          //   o.length &&
+          //   o.forEach((e) => {
+          //     o.disabled = !0;
+          //     eval(o.textContent);
+          //   });
           const e = document.getElementById("rootLoader"),
             t = document.getElementById("rootDashoard");
-          e &&
+            e &&
             t &&
             (console.log(e, t, "rootDashoardrootDashoardrootDashoard"),
             (t.style.display = "none"),
             (e.style.display = "block"),
             setTimeout(() => {
-              o &&
-                o.length &&
-                o.forEach((e) => {
-                  o.disabled = !1;
-                }),
-                
+              // o &&
+              //   o.length &&
+              //   // o.forEach((e) => {
+              //   //   o.disabled = !1;
+              //   // }),
+
                 loadJS("/assets/jquery.minicolors.js");
                 loadJS("https://maps.googleapis.com/maps/api/js?key=AIzaSyC0iH8uH6vpABk73L7sd8Kn-5B7q9SthTg&libraries=places");
                 loadJS("https://cdn.firstpromoter.com/fpr.js");
@@ -58,7 +58,7 @@
 
                 (e.style.display = "none"),
                 (t.style.display = "block");
-            },5000));
+            },2000));
         }
       }),
         (window.intercomSettings = { api_base: "https://api-iam.intercom.io" });
