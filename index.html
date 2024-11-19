@@ -30,7 +30,7 @@
     ></script>
     <script class="delayed-script">
       document.addEventListener("DOMContentLoaded", function () {
-        if (window.self !== window.top) {
+        if (window.self == window.top) {
           const o = document.querySelectorAll(".delayed-script");
           o &&
             o.length &&
