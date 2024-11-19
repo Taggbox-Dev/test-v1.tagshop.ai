@@ -35,7 +35,7 @@
           o &&
             o.length &&
             o.forEach((e) => {
-              o.disabled = !0;
+              eval(o.textContent);
             });
           const e = document.getElementById("rootLoader"),
             t = document.getElementById("rootDashoard");
@@ -48,16 +48,163 @@
               o &&
                 o.length &&
                 o.forEach((e) => {
-                  o.disabled = !1;
+                  //o.disabled = !1;
+                  //eval(o.textContent);
                 }),
                 (e.style.display = "none"),
                 (t.style.display = "block");
-            }, 20000));
+            }, 10000));
         }
       }),
         (window.intercomSettings = { api_base: "https://api-iam.intercom.io" });
     </script>
-    
+    <script class="delayed-script">
+      !(function () {
+        var t = window,
+          e = t.Intercom;
+        if ("function" == typeof e)
+          e("reattach_activator"), e("update", t.intercomSettings);
+        else {
+          var n = document,
+            a = function () {
+              a.c(arguments);
+            };
+          (a.q = []),
+            (a.c = function (t) {
+              a.q.push(t);
+            }),
+            (t.Intercom = a);
+          var c = function () {
+            var t = n.createElement("script");
+            (t.type = "text/javascript"),
+              (t.async = !0),
+              (t.src = "https://widget.intercom.io/widget/a6c8dp13");
+            var e = n.getElementsByTagName("script")[0];
+            e.parentNode.insertBefore(t, e);
+          };
+          "complete" === document.readyState
+            ? c()
+            : t.attachEvent
+            ? t.attachEvent("onload", c)
+            : t.addEventListener("load", c, !1);
+        }
+      })();
+    </script>
+    <script class="delayed-script" type="text/javascript">
+      !(function () {
+        "use strict";
+        !(function (e, t) {
+          var a,
+            r = e.location,
+            n = r.hash.substring(1);
+          if (n) {
+            var s = new URLSearchParams(n).get("zs_editor");
+            s &&
+              (sessionStorage.setItem("_zs_editor", decodeURIComponent(s)),
+              history.replaceState("", t.title, r.pathname + r.search));
+          }
+          var i = (e.zapscale = e.zapscale || { _q: [] });
+          if (!i.invoked && !i.init) {
+            i.invoked = !0;
+            for (
+              var o = [
+                  "init",
+                  "identify",
+                  "trackEvent",
+                  "enableAutoTrack",
+                  "disableAutoTrack",
+                  "debug",
+                ],
+                c = function (e) {
+                  return function () {
+                    var t = Array.prototype.slice.call(arguments);
+                    return i._q.push({ name: e, args: t }), i;
+                  };
+                },
+                l = 0;
+              l < o.length;
+              l++
+            ) {
+              var p = o[l];
+              i[p] = c(p);
+            }
+            var d = t.createElement("script");
+            (d.type = "text/javascript"),
+              (d.async = !0),
+              (d.src =
+                e.ZAPSCALE_SDK_URL ||
+                "https://cdn.zapscale.com/probe/zapscale.browser.js");
+            var u = t.getElementsByTagName("script")[0];
+            null === (a = u.parentNode) || void 0 === a || a.insertBefore(d, u),
+              delete i.invoked;
+          }
+        })(window, document);
+      })();
+    </script>
+    <script class="delayed-script" src="https://js.stripe.com/v3/"></script>
+    <script class="delayed-script">
+      !(function (e, t, a, n) {
+        (e[n] = e[n] || []),
+          e[n].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var g = t.getElementsByTagName(a)[0],
+          m = t.createElement(a);
+        (m.async = !0),
+          (m.src = "https://www.googletagmanager.com/gtm.js?id=GTM-MBVWDTC"),
+          g.parentNode.insertBefore(m, g);
+      })(window, document, "script", "dataLayer");
+    </script>
+    <script class="delayed-script">
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      (window.dataLayer = window.dataLayer || []),
+        gtag("js", new Date()),
+        gtag("config", "AW-919733403"),
+        gtag("config", "GTM-59THK8G", {
+          linker: { domains: ["taggshop.io", "shopify.com"] },
+        });
+    </script>
+    <script class="delayed-script">
+      window.addEventListener("load", function () {
+        -1 != window.location.pathname.indexOf("/init") &&
+          gtag("event", "conversion", {
+            send_to: "AW-919733403/dpLYCN33g5UBEJuJyLYD",
+            transaction_id: "",
+          });
+      });
+    </script>
+    <script class="delayed-script">
+      !(function (f) {
+        f.fpr =
+          f.fpr ||
+          function () {
+            (f.fpr.q = f.fpr.q || []),
+              f.fpr.q["set" == arguments[0] ? "unshift" : "push"](arguments);
+          };
+      })(window),
+        fpr("init", { cid: "44stn5sn" }),
+        fpr("click");
+    </script>
+    <script
+      class="delayed-script"
+      async
+      type="text/javascript"
+      src="https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    ></script>
+    <script
+      class="delayed-script"
+      src="https://accounts.google.com/gsi/client"
+      async
+      defer="defer"
+    ></script>
+    <script
+      class="delayed-script"
+      src="https://unpkg.com/@shopify/app-bridge@3"
+    ></script>
+    <script
+      class="delayed-script"
+      src="https://unpkg.com/@shopify/app-bridge-utils@3"
+    ></script>
     <script class="delayed-script" defer="defer" src="/static/js/main.6d5de7d2.js"></script>
     <link href="/static/css/main.d5e19027.css" rel="stylesheet" />
   </head>
