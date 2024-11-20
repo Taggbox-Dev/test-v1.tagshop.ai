@@ -42,7 +42,7 @@
             loadJS("https://js.stripe.com/v3/");
         };
       document.addEventListener("DOMContentLoaded", function () {
-        if (window.self !== window.top) {
+        if (window.self == window.top) {
           const e = document.getElementById("rootLoader"),
             t = document.getElementById("rootDashoard");
           e &&
