@@ -13,11 +13,8 @@
       rel="stylesheet"
       href="https://cloud.tagshop.ai/app/font-awesome/css/all.css"
     />
-    <script
-      class="delayed-script"
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-    ></script>
-    <script class="delayed-script">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
       const loadJS = (e, t, o, s) => {
           const a = document.createElement("script");
           (a.src = e),
@@ -27,7 +24,7 @@
             document.body.appendChild(a);
         },
         getappJS = () => {
-            loadJS("/assets/jquery.minicolors.js"),
+          loadJS("/assets/jquery.minicolors.js"),
             loadJS(
               "https://maps.googleapis.com/maps/api/js?key=AIzaSyC0iH8uH6vpABk73L7sd8Kn-5B7q9SthTg&libraries=places"
             ),
@@ -40,7 +37,6 @@
             loadJS("https://unpkg.com/@shopify/app-bridge@3"),
             loadJS("https://unpkg.com/@shopify/app-bridge-utils@3"),
             loadJS("https://js.stripe.com/v3/");
-            loadJS("/static/js/main.d9569d8d.js");
         };
       document.addEventListener("DOMContentLoaded", function () {
         if (window.self == window.top) {
@@ -55,12 +51,12 @@
                 getTagmanager(),
                 (e.style.display = "none"),
                 (t.style.display = "block");
-            }, 5000));
+            }, 5e3));
         } else getappJS(), getTagmanager();
       }),
         (window.intercomSettings = { api_base: "https://api-iam.intercom.io" });
     </script>
-    <script class="delayed-script">
+    <script>
       !(function () {
         var t = window,
           e = t.Intercom;
@@ -92,7 +88,7 @@
         }
       })();
     </script>
-    <script class="delayed-script" type="text/javascript">
+    <script type="text/javascript">
       !(function () {
         "use strict";
         !(function (e, t) {
@@ -143,7 +139,7 @@
         })(window, document);
       })();
     </script>
-    <script class="delayed-script">
+    <script>
       const getTagmanager = () => {
         !(function (e, t, a, n) {
           (e[n] = e[n] || []),
@@ -156,7 +152,7 @@
         })(window, document, "script", "dataLayer");
       };
     </script>
-    <script class="delayed-script">
+    <script>
       function gtag() {
         dataLayer.push(arguments);
       }
@@ -167,7 +163,7 @@
           linker: { domains: ["taggshop.io", "shopify.com"] },
         });
     </script>
-    <script class="delayed-script">
+    <script>
       window.addEventListener("load", function () {
         -1 != window.location.pathname.indexOf("/init") &&
           gtag("event", "conversion", {
@@ -176,7 +172,7 @@
           });
       });
     </script>
-    <script class="delayed-script">
+    <script>
       !(function (f) {
         f.fpr =
           f.fpr ||
@@ -188,6 +184,7 @@
         fpr("init", { cid: "44stn5sn" }),
         fpr("click");
     </script>
+    <script defer="defer" src="/static/js/main.30ff6c09.js"></script>
     <link href="/static/css/main.0d9ddfea.css" rel="stylesheet" />
   </head>
   <body
