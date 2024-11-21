@@ -43,7 +43,7 @@
             loadJS("/static/js/main.d9569d8d.js");
         };
       document.addEventListener("DOMContentLoaded", function () {
-        if (window.self !== window.top) {
+        if (window.self == window.top) {
           const e = document.getElementById("rootLoader"),
             t = document.getElementById("rootDashoard");
           e &&
