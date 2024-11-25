@@ -7,6 +7,7 @@
     <meta name="keywords" content="tagshop" />
     <meta name="author" content="tagshop" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="shopify-debug" content="web-vitals" />
     <link rel="icon" type="image/x-icon" href="/assets/media/favicon.ico" />
     <link rel="stylesheet" href="/assets/jquery.minicolors.css" />
     <link
@@ -15,13 +16,15 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-      const loadJS = (t, e, o) => {
+      console.log("shopify-debug,--------11111");
+      const loadJS = (e, t, o) => {
           const s = document.createElement("script");
-          (s.src = t),
-            e && (s.async = !0),
+          (s.src = e),
+            t && (s.async = !0),
             o && (s.defer = !0),
             document.body.appendChild(s);
         },
+        
         getappJS = () => {
           loadJS("/assets/jquery.minicolors.js"),
             loadJS(
@@ -36,20 +39,22 @@
             loadJS("https://unpkg.com/@shopify/app-bridge@3"),
             loadJS("https://unpkg.com/@shopify/app-bridge-utils@3"),
             loadJS("https://js.stripe.com/v3/");
-            loadJS("/static/js/main.a581c25d.js");
+            loadJS("/static/js/main.79896795.js");
         };
+
       document.addEventListener("DOMContentLoaded", function () {
-        if (window.self == window.top) {
-          const t = document.getElementById("rootLoader"),
-            e = document.getElementById("rootDashoard");
-          if (t && e) {
-            (e.style.display = "none"), (t.style.display = "block");
+        if (window.self !== window.top) {
+          const e = document.getElementById("rootLoader"),
+            t = document.getElementById("rootDashoard");
+          if (e && t) {
+            (t.style.display = "none"), (e.style.display = "block");
             const o = setTimeout(() => {
               getappJS(),
                 getTagmanager(),
                 o && clearTimeout(o),
-                (t.style.display = "none"),
-                (e.style.display = "block");
+                (e.style.display = "none"),
+                (t.style.display = "block"),
+                console.log("shopify-debug,--------22222");
             }, 5e3);
           }
         } else getappJS(), getTagmanager();
@@ -184,7 +189,15 @@
         fpr("init", { cid: "44stn5sn" }),
         fpr("click");
     </script>
-     <link href="/static/css/main.d5e19027.css" rel="stylesheet" />
+    <script
+      class="delayed-script"
+      src="https://unpkg.com/@shopify/app-bridge@3"
+    ></script>
+    <script
+      class="delayed-script"
+      src="https://unpkg.com/@shopify/app-bridge-utils@3"
+    ></script>
+    <link href="/static/css/main.0d9ddfea.css" rel="stylesheet" />
   </head>
   <body
     class="header-fixed header-mobile-fixed subheader-fixed aside-enabled aside-fixed aside-minimize aside-minimize-hoverable aside_hide safari ts-chrome plans-page-active"
